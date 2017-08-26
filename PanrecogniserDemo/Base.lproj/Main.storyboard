@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PanrecogniserDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GFX-J3-Ngt">
+                                <rect key="frame" x="140" y="307" width="95" height="53"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="95" id="4MW-LF-sSt"/>
+                                    <constraint firstAttribute="height" constant="53" id="rQk-4r-Se9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QyY-04-JSs">
+                                <rect key="frame" x="0.0" y="539" width="375" height="128"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mKS-Rk-JXd">
+                                        <rect key="frame" x="45" y="63.5" width="285" height="21.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.80000001190000003" green="0.40000000600000002" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="128" id="32j-Kp-Rvv"/>
+                                    <constraint firstItem="mKS-Rk-JXd" firstAttribute="leading" secondItem="QyY-04-JSs" secondAttribute="leading" constant="45" id="bDu-ab-pXF"/>
+                                    <constraint firstAttribute="bottom" secondItem="mKS-Rk-JXd" secondAttribute="bottom" constant="43" id="iNo-K1-yfW"/>
+                                    <constraint firstAttribute="trailing" secondItem="mKS-Rk-JXd" secondAttribute="trailing" constant="45" id="ryV-iF-BhJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="1" alpha="0.68328220858895705" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="QyY-04-JSs" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="539" id="KsU-yR-eXG"/>
+                            <constraint firstItem="GFX-J3-Ngt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Nmk-0b-Rln"/>
+                            <constraint firstItem="QyY-04-JSs" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="SBK-Qt-3rc"/>
+                            <constraint firstItem="GFX-J3-Ngt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="U61-Xz-A1n"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="QyY-04-JSs" secondAttribute="bottom" id="p23-bs-kIb"/>
+                            <constraint firstAttribute="trailing" secondItem="QyY-04-JSs" secondAttribute="trailing" id="xvi-bm-vEE"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="dragLabel" destination="GFX-J3-Ngt" id="LJN-1J-1eu"/>
+                        <outlet property="trashLabel" destination="mKS-Rk-JXd" id="IL0-vw-32q"/>
+                        <outlet property="trashView" destination="QyY-04-JSs" id="ewn-Fk-UYM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="-143"/>
+        </scene>
+    </scenes>
+</document>
